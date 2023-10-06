@@ -1,0 +1,125 @@
+---
+title: "Replication of Study X by Sample & Sample (20xx, Psychological Science)"
+author: "Replication Author[s] (contact information)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+  html:
+    toc: true
+    toc_depth: 3
+---
+
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+## Introduction
+
+1). A short justification for your choice of experiment in terms of your research interests or research program (1 paragraph).
+
+My choice of experiment aligns with my research interests in the field of education, particularly in the area of students' intelligence mindset. Throughout my master's program, I delved into the fascinating debate surrounding fixed and growth mindsets among students. Additionally, I have explored research articles investigating the connection between parents' mindsets and their children's mindset development. However, the unique focus of this experiment on parents' failure mindset and its potential influence on students' intelligence mindset offers a fresh perspective. This study promises to contribute significantly to my understanding of the factors that shape students' intelligence mindsets, making it a valuable addition to my research program.
+
+2). A description of the stimuli and procedures that will be required to conduct this experiment, and what the challenges will be (1-2 paragraphs).
+
+This experiment aimed to investigate whether parents' failure mindsets have a causal effect on their reactions to their children's failures. Before the experiment, we have to develop two sets of five-item questionnaire first: one for promoting a 'failure-is-debilitating' mindset and the other for promoting a 'failure-is-enhancing' mindset, with the aim of temporarily manipulating their mindset. The procedures of this experiments might include the following steps; 1) Recruit the parents 2) Pre-assess the parents' current failure mindsets and their perceptions of their child's competence 3). Randomly assign parents to two groups 4). Manipulate their mindset 5). Ask participants to imagine their child's failure in math quiz and write their response 6). Post-assess parents' mindset after manipulation 7). Code the open-ended responses, 8) Finally analyze the data and report the result. However, crafting effective questionnaires that genuinely manipulate the desired mindset can be challenging. Moreover, even though we attempt to randomly assign participants to one of the two questionnaire conditions, ensuring truly random assignment can be difficult due to factors such as participants' personal biases or demographic information, which may affect the mindset manipulation. Additionally, when analyzing the results of the intervention, the parents' responses regarding their feelings related to their child's supposed failure on a math quiz are in an open-ended descriptive format. This means that researchers should code the open-ended responses into performance-oriented and learning-oriented responses, a process that can be subject to inter-rater variability. Maintaining high reliability between coders is essential.
+
+3). A link to the repository and to the original paper (as hosted in your repo). 
+
+https://github.com/ejmyoung/haimovitz2016_1_rescue/blob/2bc755e2cf8879bf63977180987b8e5d52d2532f/original_paper/%20Parents%E2%80%99%20Views%20of%20Failure%20Predict%20Children%E2%80%99s%20Fixed%20and%20Growth%20Intelligence%20Mind-Sets.pdf
+
+
+
+## Summary of prior replication attempt
+
+Based on the prior write-up, describe any differences between the original and 1st replication in terms of methods, sample, sample size, and analysis. Note any potential problems such as exclusion rates, noisy data, or issues with analysis.
+
+## Methods
+
+### Power Analysis
+
+Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size. Considerations of feasibility for selecting planned sample size.
+
+How much power does your planned sample have for original effect? For an attenuated effect that is half the size of the original?
+
+(If power analysis is not possible or precise, discuss more fully how you determined a sample size that would be sufficient for rescue.)
+
+### Planned Sample
+
+Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+
+### Materials
+
+All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely. Or, quote directly and just point out exceptions to what was described in the original article.
+
+### Procedure
+
+Can quote directly from original article - just put the text in quotations and note that this was followed precisely. Or, quote directly and just point out exceptions to what was described in the original article.
+
+### Controls
+
+What attention checks, positive or negative controls, or other quality control measures are you adding so that a (positive or negative) result will be more interpretable?
+
+### Analysis Plan
+
+Can also quote directly, though it is less often spelled out effectively for an analysis strategy section. The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.
+
+**Clarify key analysis of interest here** You can also pre-specify additional analyses you plan to do.
+
+### Differences from Original Study and 1st replication
+
+Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study. The goal, of course, is to minimize those differences, but differences will inevitably occur. Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+
+Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+
+Any differences from what was described as the original plan, or "none".
+
+## Results
+
+### Data preparation
+
+Data preparation following the analysis plan.
+
+```{r include=F}
+### Data Preparation
+
+#### Load Relevant Libraries and Functions
+
+#### Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Results of control measures
+
+How did people perform on any quality control checks or positive and negative controls?
+
+### Confirmatory analysis
+
+The analyses as specified in the analysis plan.
+
+*Three-panel graph with original, 1st replication, and your replication is ideal here*
+
+### Exploratory analyses
+
+Any follow-up analyses desired (not required).
+
+## Discussion
+
+## Mini meta analysis
+
+Combining across the original paper, 1st replication, and 2nd replication, what is the aggregate effect size?
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt. None of these need to be long.
