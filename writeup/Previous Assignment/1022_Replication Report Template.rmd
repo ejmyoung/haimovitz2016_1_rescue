@@ -2,15 +2,10 @@
 title: "Replication of Experiment 4 in '‘What Predicts Children’s Fixed and Growth Intelligence Mindsets? Not Their Parents’ View of Intelligence but Their Parents’ View of Failure’ by Haimovitz and Dweck (2016, Psychological Science)"
 author: "Eunjung Myoung (ejmyoung@stanford.edu)"
 date: "`r format(Sys.time(), '%10 %19, %2023')`"
-output:
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
-  html_document:
-    toc: yes
+format:
+  html:
+    toc: true
     toc_depth: 3
-    toc_float:
-      collapsed: no
 ---
 
 <!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
@@ -169,16 +164,11 @@ Original Study Result
 > “Parents who were induced to hold a failure-is-debilitating mind-set were more likely to react with concerns about their child’s performance and lack of ability, t(131) = 3.246, p < .001, ηp2 = .075 … compared with those who were induced to hold a failure-is-enhancing mind-set.”
 
 *Three-panel graph with original, 1st replication, and your replication is ideal here*
-
 **original research result**
-
-
-<img src="https://github.com/ejmyoung/haimovitz2016_1_rescue/blob/main/image/original%20figure.png?raw=true." width="400" height="400" />
+![Alt](/Users/myeong-eunjeong/Library/CloudStorage/OneDrive-Stanford/PSYCH 251/original figure.png)
 
 **1st replication research result**
-
-
-<img src="https://github.com/ejmyoung/haimovitz2016_1_rescue/blob/main/image/1st%20replication%20figure.png?raw=true." width="400" height="400" />
+![Alt](/Users/myeong-eunjeong/Library/CloudStorage/OneDrive-Stanford/PSYCH 251/1st replication figure.png)
 
 ### Exploratory analyses
 Any follow-up analyses desired (not required).
