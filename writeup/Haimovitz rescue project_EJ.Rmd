@@ -1,0 +1,881 @@
+---
+title: "Replication of Experiment 4 in 'What Predicts Children’s Fixed and Growth Intelligence Mindsets? Not Their Parents’ View of Intelligence but Their Parents’ View of Failure’ by Haimovitz and Dweck (2016, Psychological Science)"
+author: "Eunjung Myoung (ejmyoung@stanford.edu)"
+date: "`r format(Sys.time(), '%12, %10, %2023')`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: no
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+
+## Introduction
+
+#### 1) Short justification for my choice of experiment
+
+My choice of experiment aligns with my research interests in the field of education, particularly in the area of students' intelligence mindset. Throughout my master's program, I delved into the fascinating debate surrounding fixed and growth mindsets among students. Additionally, I have explored research articles investigating the connection between parents' mindsets and their children's mindset development. However, the unique focus of this experiment on parents' failure mindset and its potential influence on students' intelligence mindset offers a fresh perspective. This study promises to contribute significantly to my understanding of the factors that shape students' intelligence mindsets, making it a valuable addition to my research program.
+
+#### 2) A description of the stimuli and procedures that will be required to conduct this experiment, and the expected challenges
+
+This experiment aimed to investigate whether **parents' failure mindsets have a causal effect on their reactions to their children's failures**. The procedures of this experiments might include the following steps; 1) Recruit the parents 2) Randomly assign parents to two groups to manipulate their their failure mindset (i.e., failure-is-debilitating mind-set and failure-is- enhancing mind-set) 3) Ask participants to imagine their child's failure in math quiz and write their response 4) Post-assess parents' failure mindset after manipulation 5) Code the open-ended responses 6) Finally analyze the data and report the result.
+
+However, crafting effective questionnaires that genuinely manipulate the desired mindset can be challenging. Moreover, even though we attempt to randomly assign participants to one of the two questionnaire conditions, ensuring truly random assignment can be difficult due to factors such as participants' personal biases or demographic information, which may affect the mindset manipulation. Additionally, when analyzing the results of the intervention, the parents' responses regarding their feelings related to their child's supposed failure on a math quiz are in an open-ended descriptive format. This means that researchers should code the open-ended responses into performance-oriented and learning-oriented responses, a process that can be subject to inter-rater variability. Maintaining high reliability between coders is essential.
+
+A link to the repository and to the original paper is <a href="https://github.com/ejmyoung/haimovitz2016_1_rescue/blob/2bc755e2cf8879bf63977180987b8e5d52d2532f/original_paper/%20Parents%E2%80%99%20Views%20of%20Failure%20Predict%20Children%E2%80%99s%20Fixed%20and%20Growth%20Intelligence%20Mind-Sets.pdf">"here"</a>. 
+
+
+#### 3) Summary of prior replication (Takada, 2021) attempt
+
+Based on the prior write-up, describe any differences between the original and 1st replication in terms of methods, sample, sample size, and analysis.
+
+|                        | Original study (Haimovitz & Dweck, 2016)                                                                                                                                                                                         | Replication (Takada, 2021)                                                                                                                                                                                                                               |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sample size            | n = 132                                                                                                                                                                                                | n = 115                                                                                                                                                                                                                                         |
+| Sample characteristics |                                                                                                                                                                                                        |                                                                                                                                                                                                                                                  |
+| 1) Gender               | Female (57%)                                                                                                                                                                                           | Female (49%), genderqueer, gender fluid, or non-binary (2%)                                                                                                                                                                                      |
+| 2) Education            | High school diploma or some college education (31%), College degree (51%), Postgraduate degree (18%)                                                                                                   | No degrees (1%), High school diploma (24%),  College degree (55%), Post-graduate degree (19%),  Preferred not to answer (1%)                                                                                                                     |
+| 3) Race/Ethnicity       | White (75%), African American (12%),  Asian American (7%), Hispanic (6%)                                                                                                                               | White (63%), Black/African American (16%), Asian (4%), Hispanic, Latino or Spanish origin (17%),  Native Hawaiian or Other Pacific Islander (1%), Filled in their own option (3%), Preferred not to answer (1%)                                  |
+| Crowdsourcing Platform | Amazon’s Mechanical Turk Web                                                                                                                                                                           | Prolific                                                                                                                                                                                                                                         |
+| Analysis               | Unpaired, Two-Tailed T-Test (tried control variable)                                                                                                                                                                           | Unpaired, Two-Tailed T-Test (did not consider control variable)                                                                                                                                                                                                                     |
+| Coder                  | Two coders: rated 20 responses (15%).(performance-oriented responses: ICC = .91; learning- oriented responses: ICC = .90).                                                                             | one coder                                                                                                                                                                                                                                        |
+| Data exclusion         | did not mention for the exclusion                                                                                                                                                                      | exclude data from participants  if the open-ended responses were not possible to code  (e.g., unintelligible responses, responses such as “I don’t know.”).                                                                                      |
+| Result                 | **Parents who were induced to hold a failure-is-debilitating mind-set were more likely to react with concerns about  their child’s performance and lack of ability**  t(131) = 3.246, p < .001, ηp2 = .075 | showed similar trends to this original finding. But, the **effect was not as large and there was no statistical difference  in the number of performance-oriented responses between the two condition**s,  t(113) = -1.9291, p = 0.0562, ηp2 = .031.|
+|
+
+In addition to the original research, the replication study examined **demographic variables such as the child's age, parents' socioeconomic status (specifically, education level), parents' gender, and parents' race/ethnicity**. While the replication study provided a transparent account of the sampling process and data analysis, it had limitations. Specifically, the study employed only a single coder, making it impossible to assess inter-coder reliability and also did not consider the control variable for the main t-test. 
+
+## Methods
+
+### Power Analysis
+
+**Original effect size of the main analyses:** 
+ηp2 = .075
+  
+> (Haimovitz & Dweck, 2016) The results the authors reported that **Parents who were induced to hold a failure-is-debilitating mindset were more likely to react with concerns about their child’s performance and lack of ability, t(131) = 3.246, p < .001,  ηp2 = .075**.
+
+**Power analysis to detect this effect size with an alpha of 0.05:**
+
+* To achieve 80% power, require : 100 parents.
+* To achieve 90% power, require : 132 parents.
+* To achieve 95% power, require : 164 parents. 
+
+### Planned Sample
+
+In the **original study**, 310 adults from a crowd sourcing platform called Amazon Mechanical Turk completed an initial survey asking whether they were a parent. Out of these adults, **132 participants** reported to be a parent and were chosen to participate in the study.
+
+In the **first replication study**, 119 parents were recruited and **115 participants** were finally analyzed. 
+
+**This study  plan to recruit the parents from prolific; 140 parents.** Because, the result of first replication study was not significant compared to the original paper and the replicator mentioned that;
+
+> (Takada, 2021) However, I think my replication was rather successful, given that my sample size was smaller.
+
+Considering the power analysis, and as I planned the collaborative work with *Khaing Su Mon* with the same data, this rescue project aim to achieve 90% power by gathering more than 132 samples. Considering the data exclusion after, we planned to gather 140 samples. 
+
+### Materials
+
+#### General Materials and Procedures
+
+This study followed the materials and procedures outlined in the original article and the first replication study. 
+All survey items outlined in the supplementary <a href="https://osf.io/hb583">"Materials and Measures"</a> document were used.
+
+The **procedures** of this study is: 
+
+First, the study asked **parents' perceptions of their childrens' competence in four subject (i.e., Math, Science, Social Science, and English)**. 
+
+> (Haimovitz & Dweck, 2016) Participants completed an online survey initially assessing several beliefs, including their perceptions of their child’s competence (assessed with same measure as in Study 1; α = .79). 
+
+Second, the study **randomly designated parents into either condition: 1). failure is debilitating condition, 2). failure is enhancing condition.**
+
+> (Haimovitz & Dweck, 2016) Then we temporarily manipulated failure mind-sets by randomly assigning the parents to complete one of two five-item biased questionnaires, written to foster agreement with either a failure-is-debilitating mind-set (e.g., “Experiencing failure can lead to negative feelings, like shame or sadness, that interfere with learning”) or a failure-is- enhancing mind-set (e.g., “Experiencing failure can improve performance in the long run if you learn from it”). All measures used a 6-point rating scale from 1 (strongly disagree) to 6 (strongly agree).
+
+Third, the study **gave a hypothetical scenario in which their child came home with a F in Math test and asked their response in open-ended questions**
+
+> (Haimovitz & Dweck, 2016) We then asked participants to read and vividly imagine a scenario in which their child came home from school with a failing grade on a math quiz, as in Study 2. They then wrote what they would do, think, and feel in response. 
+
+Finally, the study asked to **report their failure mind-sets.**
+
+> (Haimovitz & Dweck, 2016) participants reported on their failure mind-sets (α = .82), using the same items as in Study 1, as part of a survey that included a few other items.
+
+Adding to the this survey, the replication study gathered the demographic information. 
+
+> (Takada, 2021) As I was also not sure where to collect **demographic data (i.e., sex, race, education level, child’s age)**, I decided to collect this information as part of the final survey at the very end of the study.
+
+
+Related to the **materials**, the first replication study highlighted the ambiguity of the Likert scale used in the original article, as well as the lack of clarity in the collected demographic data: This rescue study decided to follow this from first replication study. 
+
+> (Takada, 2021) From reading the original article and supplementary document, it was not clear whether the middle points on the Likert scale were labelled. Based on similar studies examining intelligence mindsets, I decided to label the middle points with “mostly dis/agree” and “slightly dis/agree.” ... As I was also not sure where to collect demographic data (i.e., sex, race, education level, child’s age), I decided to collect this information as part of the final survey at the very end of the study.
+
+
+Here is a link to the survey that was used to conduct the replication study: 
+**<https://stanforduniversity.qualtrics.com/jfe/form/SV_9tVwoAgXkfFqHOK>**
+
+#### Coding
+The open ended responses were coded following the explanation in the original article and the supplementary document; <a href="https://osf.io/hb583">"Materials and Measures"</a>. As the coding scheme was already developed by the author, this study followed it. 
+
+> (Haimovitz & Dweck, 2016) The codes were broken down into two main categories of interest: performance-oriented responses and learning-oriented responses. Coders gave a score of 1 each time a code was present. Codes in the performance-oriented category were responses that focused on judgments of ability, particularly as a stable trait (e.g., “I would think maybe my child is just not that good at math”); comfort for lack of ability (e.g., “It’s ok that you got an F. You tried your best”); contingent self-worth based on their child’s performance (e.g., “I’d feel bad about myself”); pity for their child’s lack of ability (“I would feel a little nervous for my child because I know how hard it can be”); grades as a goal (e.g., “I would . . . hope their grades from previous [tests] are high enough to make up for the test”); and social comparison (“I would also want to know how the other children in the class scored”). Codes in the learning-oriented category were responses that focused on judgments of effort (e.g., “I would tell my son he needs to study harder”); strategies, which included both general strategies (e.g., “he didn’t study the material in the right way”) and specific study or test-taking strategies (e.g., “I would also say that double checking your work before you hand it in is a good habit to get into”); help seeking (e.g., “I would get her a math tutor”); mastery, or conceptual understanding, as a goal (e.g., “the important thing we need to do is try to understand the concepts behind the problems he got wrong, and then study those”); interest (e.g., “I would hope that the results of the test would not stop her from enjoying the class and wonder about ways I could help keep her liking of the subject going”); and explicit characterizations of failure as enhancing, or good (e.g., “It is ok to make mistakes and fail sometimes, because that’s how people learn”)... Two statements that repeated the same sentiment were not coded as two instances (e.g., “I would question how much studying did they do” and “I would also ask . . . do they think they studied enough” would be one code for effort). However, two statements that expressed different ideas but fell under the same code were marked as two instances (e.g., “I would question my child to make sure that she studied the correct material thoroughly” and “I would ask to make sure that she was paying attention in class” would be marked as two codes for strategies, as these statements represent different strategies). If a statement fell under two codes and one was more specific than the other, only the more specific classification was counted. That is, although effort and help seeking can be different types of strategies, statements expressing these ideas were coded only as effort and help seeking, not also as strategies.
+
+As the two different coders coded the responses, the study calculated the Intraclass correlation coefficients (ICCs) to evaluate the consistency of coding.
+
+> (Haimovitz & Dweck, 2016) Scores for performance-oriented and learning-oriented responses were each created by summing all instances of their respective subcategories. Two coders rated 20 responses (15%) to assess reliability. Intraclass correla- tion coefficients (ICCs) were high for both measures (performance-oriented responses: ICC = .91; learning- oriented responses: ICC = .90).
+
+On the other hand, the 1st replication study hired only one coder. 
+
+> (Takada, 2021) As there was already a coding scheme developed by the original authors, I did not create my own coding scheme. Rather, I carefully reviewed the coding scheme outlined in the supplementary document to code the responses. I considered recruiting an undergraduate RA or another PSYCH 251 student to serve as the second rater, but in the end, I decided to code all of the responses on my own. I came to this decision during the pilot study, when I noticed it takes a while to get used to the coding scheme outlined by the authors. Given that the project needed to be completed in a quarter, it didn’t seem feasible to recruit another student and have them reliably code the responses in this short time frame. By scrambling the responses before downloading and viewing the open-ended responses for coding, I was able to ensure that I remained blind to condition.
+
+### Analysis Plan
+The study requires three kinds of t-tests. 
+
+**1). one-sample t-test for first manipulation check**
+
+This test is used to **assess participants’ agreement with the manipulated condition (i.e., failure-enhancing condition and failure-debilitating condition)**, by comparing the mean in each priming condition with the scale midpoint (3.5) and confirming it was above the midpoint. If the mean is above than the midpoint we can assume that parents agreed with the intended mindset. 
+
+> (Haimovitz & Dweck, 2016) One-sample t tests comparing the mean in each priming condition with the scale’s midpoint (3.5) showed that participants’ agreement with the intended mind-set was above the midpoint in both the failure-is-debilitating condition (M = 4.41, SD = 1.07), t(56) = 6.45, p < .001, and the failure-is-enhancing condition (M = 5.14, SD = 0.829), t(74) = 17.11, p < .001.
+
+
+**2). independent t-test for second manipulation check**
+
+This test is used to **assess whether the biased-questionnaire manipulation (i.e., failure-enhancing condition and failure-debilitating condition) effectively changed parents’ self-reported failure mindsets at the end of the survey**, by comparing the means of failure mindset responses with the two conditions. The higher mean of the survey indicates the enhancing mindset and the lower mean of the survey indicates the debilitating mindset. If the mean of failure-enhancing condition is higher and the mean difference between conditions is significant, we can say that the failure-enhancing condition has more enhancing mindset. 
+
+**3). independent t-test for the main analysis**
+
+This test is the statistic of interest of this rescue project. The hypothesis are: 
+
+* (1). parents in failure-is-debilitating condition are more likely to react with concerns about their child’s performance and lack of ability, and less likely to react with support for their child’s learning and mastery.
+
+* (2). Parents in both conditions will not report performance-oriented responses nearly as often as learning-oriented responses.
+
+For independent t-test, I chose to utilize Welch's t-test as it is adept at comparing two independent groups with unequal variances. This test is ideal for our study where we aim to compare parental reactions between the failure-is-debilitating condition and the failure-is-enhancing condition. By not assuming equal variances, Welch's t-test provides a more accurate analysis for our hypotheses, ensuring the reliability of our findings in these distinct experimental conditions.
+
+**3-1). ANCOVA for considering control variable**
+
+<div style="margin-left: 20px;">
+
+This test is used to compare mean of parents' responses (i.e., learning-oriented, performance-oriented) in each condition (i.e., failure-is-debilitating and failure-is-enhancing) while controlling for the effect of a covariate (i.e., parents' perceptions on child's competence.
+</div>
+
+#### Differences from Previous Studies
+**Crowdsourcing Platform**: Compared to the original study, the present study uses **Prolific** following the first replication study. Prolific seems to provide higher data quality, so the results in this replication project may show higher internal consistency for survey measures and better overall data quality.
+
+**sample size**: the current research plans to gather more than 132 samples, a sample size larger than those in the original study and first replication, and the final sample was 141. This increase in sample size is anticipated to analyze whether the failure to replicate the original research in the first study was due to a smaller sample size.
+
+**coders**: the current research plans to code the open-ended responses with two coders, adhering to the method employed in the original study. This approach can address the limitations identified in the first replication study.
+
+**control variable** :The current research intends to utilize the control variable—parents' perceptions of their child's competence across four subjects—while conducting the primary analysis. In contrast to the original study, which demonstrated significant t-test results after controlling for the parents' perception of the child's competence, the first replication study did not include this analysis. Therefore, considering the control variable is anticipated to successfully replicate the findings of the original study.
+
+To summarize the distinctions between the original study, the first replication, and the present study:
+
+|                  | Original study                          | 1st replication | Rescue project                          |
+|------------------|-----------------------------------------|-----------------|-----------------------------------------|
+| Crowdsourcing    | Amazon M Turk                           | Prolific        | Prolific                                |
+| Sample           | n = 132                                 | n = 115         | n = 141                                 |
+| Coders           | 2 independent coders                    | Self            | 2 Selfs                                 |
+| Control variable | perceptions of their child’s competence | X               | perceptions of their child’s competence |
+
+
+#### Methods Addendum (Post Data Collection)
+
+### Actual Sample
+A total of 141 parents wee recruited. Participants who answered "No" to the "Are you a parent?" question were immediately excluded from the survey. Initially, we (Eunjung and Khaing) aimed to gather at least 132 participants, in line with the original study, to achieve 90% power. Consequently, we received 147 responses. However, six responses were excluded from the final dataset for the following reasons: 1) two participants had one of the open-ended responses missing, and 2) four responses were uninterpretable due to the lack of clarity. Thus, the final dataset comprised responses from 141 participants, with 72 in the failure-is-debilitating condition and 69 in the failure-is-enhancing condition.
+
+The final dataset had the following demographic characteristics:
+
+**Gender**: 69.5% identifying as female, 28.4% as male, 0.7% as transgender, and 1.4% as non-binary 
+
+**Education Level**: 1.4% had no degrees, 34.8% had a high school diploma, 44.7& had a college degree, and 19.1% had a post-graduate degree
+
+**Race/Ethnicity**: 75.9% White, 11.7% Black or African American, 5.5& Asian, 3.4% Hispanic, Latino, or Spanish origin, 1.4% American Indian or Alaska Native, 1.4% Filled in their own option, and 0.7% no answer (participants could have chosen more than one category and if they choose more than one)
+
+This is the summary of the demographic information compared to the previous studies.
+
+|           | Original study                                                                            | 1st replication                                                                                                                                                                                                  | Rescue project                                                                                                                                                                            |
+|-----------|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   Gender  |                                             Female (57%)                                             |                                                                         Female (49%), genderqueer, gender fluid, <br>or non-binary (2%)                                                                        |                                                            Female (69.5%), Male (28.4%), Non-binary (1.4%), Transgender (0.7%)                                                           |
+| Education | High school diploma or some college education (31%), College degree (51%), Postgraduate degree (18%) |                                            No degree (1%), High school diploma (24%), College degree (55%), Post-graduate degree (19%), Preferred not to answer (1%)                                           |                                            No degree (1.4%), High school diploma (34.8%), College degree (44.7%), Post-graduate degree (19.1%)                                           |
+|    Race   |                White (75%), African American (12%), Asian American (7%), Hispanic (6%)               | White (63%), Black/African American (16%), Asian (4%), Hispanic, Latino or Spanish origin (17%), Native Hawaiian or Other Pacific Islander (1%), Filled in their own option (3%), Preferred not to answer (1%) | White (75.9%), Black/African American (11.7%), Asian (5.5%), Hispanic, Latino or Spanish origin (3.4%), American Indian/Alaska Native (1.4%), Preferred not to answer (1.4%),  NA (0.7%) |
+
+
+More demographic information can be found in the exploratory analysis below.
+
+
+#### Differences from pre-data collection methods plan
+none.
+
+
+## Results
+
+
+### Data preparation
+
+Data preparation following the analysis plan.
+
+```{r}
+### Data Preparation
+#### Load Relevant Libraries and Functions
+library(rmarkdown)
+library(tidyverse)
+library(knitr)
+library(qualtRics)
+library(psych)      # for reverse coding
+library(ggsignif)   # to add significance bars
+library(irr)
+
+# Read the CSV file into an R data frame
+d <- read_csv('../raw_data/FinalData.csv', show_col_types = FALSE)
+
+# Delete the pilot result
+d <- d[-c(1:29),]
+
+write_csv(d, '../raw_data/FinalData_1.csv')
+```
+
+
+#### Data Cleaning 
+
+```{r}
+# Define the columns to be excluded
+cols_to_exclude <- c("RecipientLastName", "RecipientFirstName", "RecipientEmail", "ExternalDataReference", "IPAddress", "LocationLatitude", "LocationLongitude")
+
+# Exclude columns only if they exist in the dataframe 
+# Use the anonymize scripts to make sure that all data in the repo does not have personal info (no prolific IDs, no IP addresses, no latitude and longitude coordinates!)
+d_anonymize <- d %>% 
+  select(-which(names(d) %in% cols_to_exclude))
+
+# Change survey answers into numeric values (the original data as 1(strongly disagree), 6(strongly agree))
+columns_to_transform <- c("Subject_1", "Subject_2",	"Subject_3",	"Subject_4", "Initial Survey_1","Initial Survey_2","Initial Survey_3","Initial Survey_4", "Enhancing_1","Enhancing_2","Enhancing_3","Enhancing_4","Enhancing_5", "Debilitating_1", "Debilitating_2" , "Debilitating_3", "Debilitating_4", "Debilitating_5", "Closing_1", "Closing_2", "Closing_3", "Closing_4", "Closing_5", "Closing_6")
+d_anonymize <- d_anonymize%>%
+  mutate_at(vars(columns_to_transform), ~as.numeric(sub("\\s*\\((.*?)\\)\\s*", "", .)))
+
+# Create a condition column (i.e., Failure is enhancing condition & Failure is debilitating condition )
+d_condition <- d_anonymize %>%
+  mutate(Condition = case_when(
+    !is.na(Enhancing_1) & !is.na(Enhancing_2) & !is.na(Enhancing_3) & !is.na(Enhancing_4) & !is.na(Enhancing_5) ~ "Enhancing",
+    !is.na(Debilitating_1) & !is.na(Debilitating_2) & !is.na(Debilitating_3) & !is.na(Debilitating_4) & !is.na(Debilitating_5) ~ "Debilitating", TRUE ~ NA_character_ 
+  )) %>%
+  filter(!is.na(Condition))
+
+# Delete the pilot result
+d_condition <- d_condition[-c(18, 26),]
+
+write_csv(d_condition, '../Final_data/Final_cleaning.csv')
+```
+
+
+#### Code the open-ended responses
+
+For the coding, we follow the coding scheme of the original study.
+```{r}
+### create a new file with open-ended responses to use for coding
+data_response_scrambled <- d_condition %>%
+  mutate(ResponseId = row_number()) %>%
+  select("Condition", "Open_1", "Open_2", "Open_3") %>%
+  mutate(p_ability = 0, p_entity = 0, p_pity = 0, p_self_worth = 0, p_grades = 0, p_social = 0, l_effort = 0, l_strategy = 0, l_help = 0, l_mastery = 0, l_interest = 0, l_failure_good = 0, o_ask_child = 0, sum_performance = 0, sum_learning = 0)
+
+### coded, open-ended responses
+write.csv(data_response_scrambled, "../raw_data/Final_open_response.csv")
+
+## load coded responses that finished the labeling 
+data_coded_response <- read.csv("../Final_data/Final Data Coding _EJM.csv", header = TRUE, sep = ",")
+```
+
+
+#### Calculate the ICC
+
+As we have two coders, we tried to calculate the intralcass correlation coefficient. The Intraclass Correlation Coefficient (ICC) is a statistical measure used to evaluate the reliability or consistency of measurements made by multiple observers assessing the same quantity. A high ICC (close to 1) indicates strong agreement among raters, while a low ICC (close to 0 or negative) suggests poor reliability and significant discrepancies in their assessments.
+
+Original study :
+
+> Scores for performance-oriented and learning-oriented responses were each created by summing all instances of their respective subcategories. Two coders rated 20 responses (15%) to assess reliability. Intraclass correlation coefficients (ICCs) were high for both measures (performance-oriented responses: ICC = .91; learning- oriented responses: ICC = .90).
+
+Rescue project:
+
+<div style="font-size: larger;","margin-left: 30px;">
+Two coders (Eunjung and Khaing) rated 30 responses (21%) to assess reliability. Intraclass correlation coefficients (ICCs) were high for both measures (performance-oriented responses: ICC = .70; learning- oriented responses: ICC = .92).
+</div>
+
+
+The code for calculating ICC is presented in below.
+
+```{r}
+# Calculate ICC for two coders of "performance-oriented"
+# read the data 
+data_performance_ICC <- read.csv("../raw_data/ICC_performance.csv", header = TRUE, sep = ",")
+
+# Sum the columns for each coder to get a single score for performance-oriented responses
+# This assumes that your coding columns follow the pattern p_{category}_{coder number}
+coder1_columns <- grep("_1$", names(data_performance_ICC), value = TRUE)
+coder2_columns <- grep("_2$", names(data_performance_ICC), value = TRUE)
+
+data_performance_ICC$performance_oriented_1 <- rowSums(data_performance_ICC[, coder1_columns])
+data_performance_ICC$performance_oriented_2 <- rowSums(data_performance_ICC[, coder2_columns])
+
+# Select the performance-oriented scores for ICC calculation
+performance_scores <- data_performance_ICC[, c("performance_oriented_1", "performance_oriented_2")]
+
+# Calculate ICC for two coders using a two-way mixed model for absolute agreement
+icc_results <- icc(performance_scores, model = "twoway", type = "agreement", unit = "single")
+
+# Print the ICC results
+print(icc_results)
+```
+
+```{r}
+# Calculate ICC for two coders of "learning-oriented"
+
+# read the data 
+data_learning_ICC <- read.csv("../raw_data/ICC_learning.csv", header = TRUE, sep = ",")
+
+# Sum the columns for each coder to get a single score for performance-oriented responses
+# This assumes that your coding columns follow the pattern p_{category}_{coder number}
+coder1_columns <- grep("_1$", names(data_learning_ICC), value = TRUE)
+coder2_columns <- grep("_2$", names(data_learning_ICC), value = TRUE)
+
+data_learning_ICC$learning_oriented_1 <- rowSums(data_learning_ICC[, coder1_columns])
+data_learning_ICC$learning_oriented_2 <- rowSums(data_learning_ICC[, coder2_columns])
+
+# Select the learning_oriented scores for ICC calculation
+learning_scores <- data_learning_ICC[, c("learning_oriented_1", "learning_oriented_2")]
+
+# Calculate ICC for two coders using a two-way mixed model for absolute agreement
+icc_results <- icc(learning_scores, model = "twoway", type = "agreement", unit = "single")
+
+# Print the ICC results
+print(icc_results)
+```
+
+### Confirmatory analysis
+
+As the experiment put the respondents into the manipulation conditions, we had to do manipulation checks.
+
+
+#### 1). The first manipulation check (one-sample t-test)
+
+
+This test is used to **assess participants’ agreement with the manipulated condition (i.e., failure-enhancing condition and failure-debilitating condition)**, by comparing the mean in each priming condition with the scale midpoint (3.5) and confirming it was above the midpoint. If the mean is above than the midpoint we can assume that parents agreed with the intended mindset. 
+
+<div style="font-size: larger;">
+**Was the parents’ agreement with each of the intended mindsets above the midpoint?**
+</div>
+
+Original study : YES
+
+>  One-sample t tests comparing the mean in each priming condition with the scale’s midpoint (3.5) showed that participants’ agreement with the intended mind-set was above the midpoint in both the failure-is-debilitating condition (M = 4.41, SD = 1.07), t(56) = 6.45, p < .001, and the failure-is-enhancing condition (M = 5.14, SD = 0.829), t(74) = 17.11, p < .001.
+
+
+1st replication : YES <div style="font-size: smaller;">(The sentence below was written by me based on the interpretation of the coding in Takada's Rpub)
+</div>
+
+> Participants’ agreement with the intended mindset was above the midpoint in both the failure-is-debilitating condition (M = 3.98, SD not provided), t(58) = 4.03, p < .001, and the failure-is-enhancing condition (M = 5.19, SD not provided), t(55) = 15.15, p < .001. 
+
+Rescue project : YES
+
+<div style="font-size: larger;","margin-left: 30px;">
+Participants’ agreement with the intended mindset was above the midpoint in both the failure-is-debilitating condition (M = 4.48, SD = 1.01), t(71) = 8.22, p < .001, and the failure-is-enhancing condition (M = 5.33, SD = 0.68), t(68) = 22.35, p < .001. This result indicated that we can assume parents agreed with the intended mindset. 
+</div>
+
+The code and the result were listed in below.
+```{r}
+# calculate the mean. sd of each condition (1. calculate mean of the items 2. calculate the mean of the condition)
+enhancing_data <- subset(d_condition, Condition == "Enhancing")
+enhancing_cols <- enhancing_data[, c("Enhancing_1", "Enhancing_2", "Enhancing_3", "Enhancing_4", "Enhancing_5")]
+mean_enhancing <- rowMeans(enhancing_cols)
+sd_enhancing <- sd(mean_enhancing)
+
+debilitating_data <- subset(d_condition, Condition == "Debilitating")
+debilitating_cols <- debilitating_data[, c("Debilitating_1", "Debilitating_2", "Debilitating_3", "Debilitating_4", "Debilitating_5")]
+mean_debilitating <- rowMeans(debilitating_cols)
+sd_debilitating <- sd(mean_debilitating)
+
+#t-test for each condition
+t_test_enhancing <- t.test(mean_enhancing, mu = 3.5, alternative = "greater")
+t_test_debilitating <- t.test(mean_debilitating, mu = 3.5, alternative = "greater")
+
+# Output the results
+t_test_enhancing
+t_test_debilitating
+
+# read the sd 
+sd_enhancing
+sd_debilitating
+```
+
+
+#### 2). The second manipulation check (independent t-test)
+
+This test is used to assess whether the biased-questionnaire manipulation effectively changed parents’ self-reported failure mindsets at the end of the survey, by comparing the means of failure mindset responses with the two conditions. The higher mean of the survey indicates the enhancing mindset and the lower mean of the survey indicates the debilitating mindset. If the mean of failure-enhancing condition is higher and the mean difference between conditions is significant, we can say that the failure-enhancing condition has more enhancing mindset.
+
+<div style="font-size: larger;">
+**Did the parents in the failure-is-enhancing condition report more of a failure-is-enhancing mindset than the parents in the failure-is-enhancing condition?**
+</div>
+
+Original study : YES
+
+> Indeed, the manipulation seemed to shift parents’ mind-sets, t(124) = 2.53, p = 0.013: Parents in the failure-is-enhancing condition reported more of a failure- is-enhancing mind-set than did parents in the failure-is- debilitating condition.
+
+1st replication : YES <div style="font-size: smaller;">(The sentence below was written by me based on the interpretation of the coding in Takada's Rpub and in her study. she **reverse coded the positively-worded questions (i.e., failure-enhancing mindset), so the higher mean indicated the higher failure-debilitating mindset**).
+</div>
+
+> The manipulation check yielded significant results, t(111.64) = 4.5965, p = 1.138e-05, indicating that parents in the failure-is-debilitating condition reported a stronger failure-debilitating mindset than those in the failure-is-enhancing condition.
+
+Rescue project : YES
+
+<div style="font-size: larger;","margin-left: 30px;">
+The manipulation significantly shifted parents' mindsets, t(138.88) = 4.8675, p = 3.03e-06. Parents in the failure-is-enhancing condition demonstrated a more pronounced failure-is-enhancing mindset compared to those in the failure-is-debilitating condition, as indicated by the statistically significant difference in means.
+</div>
+
+The code and the result were listed in below.
+```{r}
+# Set the maximum value for the Closing items
+max_value <- 6
+
+# 1). Reverse code the specified columns and update them in the dataframe
+d_condition$Closing_4 <- max_value + 1 - d_condition$Closing_4
+d_condition$Closing_5 <- max_value + 1 - d_condition$Closing_5
+d_condition$Closing_6 <- max_value + 1 - d_condition$Closing_6
+
+# Create a new dataframe 'd_reverse' to store the reversed data
+d_reverse <- data.frame(d_condition)
+
+# 2). Calculate the mean of all Closing items, including the reversed ones, and store in 'd_reverse'
+d_reverse$Closing_mean <- rowMeans(d_reverse[, c("Closing_1", "Closing_2", "Closing_3", "Closing_4", "Closing_5", "Closing_6")], na.rm = TRUE)
+
+# 3). Subset data by condition for t-test
+enhancing_closing <- subset(d_reverse, Condition == "Enhancing")
+debilitating_closing <- subset(d_reverse, Condition == "Debilitating")
+
+# 4).Perform t-test on Closing means between the two conditions
+t_test_result <- t.test(enhancing_closing$Closing_mean, debilitating_closing$Closing_mean, alternative = "two.sided")
+
+# Output the t-test result
+t_test_result
+```
+
+#### 3). **Main analysis (independent t-test)**
+
+**Main Analysis of Interest**: 
+
+<div style="font-size: larger;">
+**Were parents who hold a failure-is-debilitating mind-set more likely to react with concerns about their child’s performance and lack of ability?**
+</div>
+
+Original Study: YES
+
+> Parents who were induced to hold a failure-is-debilitating mind-set were more likely to react with concerns about their child’s per- formance and lack of ability, t(131) = 3.246, p < .001, ηp2 = .075, and less likely to react with support for their child’s learning and mastery, t(131) = −2.04, p = .043, ηp2 = .031, compared with those who were induced to hold a failure-is-enhancing mind-set (see Fig. 2). Parents in both conditions did not report performance-oriented responses (M = 0.485, SD = 0.693) nearly as often as learning-oriented responses (M = 2.38, SD = 1.53).
+
+1st replication: Slightly YES 
+
+> The replication study showed similar trends to this original finding. The effect was not as large and there was no statistical difference in the number of performance-oriented responses between the two conditions, t(113) = -1.9291, p = 0.0562, ηp2 = .031. However, I think my replication was rather successful, given that my sample size was smaller.
+
+Rescue project: NO
+
+<div style="font-size: larger;","margin-left: 30px;">
+
+Parents who adopted a failure-is-debilitating mindset did not show a statistically significant difference in performance-oriented responses to their child's failures (M = 1.043, SD = 1.117) compared to those with a failure-is-enhancing mindset (M = 1.153, SD = 0.929), t(132.35) = -0.63017, p = 0.5297. Similarly, there was no significant difference in learning-oriented responses between parents with a failure-is-debilitating mindset (M = 2.696, SD = 1.264) and those with a failure-is-enhancing mindset (M = 2.861, SD = 1.367), t(138.83) = -0.74679, p = 0.4565. The results indicate that while there is a trend towards a failure-is-enhancing mindset being associated with slightly higher learning-oriented responses, the differences were not statistically significant.
+</div>
+
+
+The code, result, and the figure is presented below. 
+
+```{r}
+# count each condition
+data_coded_response_fie <- data_coded_response %>%
+  filter(Condition == "Enhancing")
+count_fie <- nrow(data_coded_response_fie)
+
+data_coded_response_fid <- data_coded_response %>%
+  filter(Condition == "Debilitating")
+count_fid <- nrow(data_coded_response_fid)
+
+# Output the counts
+print(paste("Count for Failure-Is-Enhancing condition:", count_fie))
+print(paste("Count for Failure-Is-Debilitating condition:", count_fid))
+
+# T-Test 
+data_coded_response_fie <- data_coded_response %>%
+  filter(Condition == "Enhancing")
+data_coded_response_fid <- data_coded_response %>%
+  filter(Condition == "Debilitating")
+sd_fie_p <-sd(data_coded_response_fie$sum_performance)
+sd_fid_p <-sd(data_coded_response_fid$sum_performance)
+sd_fie_l <-sd(data_coded_response_fie$sum_learning)
+sd_fid_l <-sd(data_coded_response_fid$sum_learning)
+
+print(sd_fie_p)
+print(sd_fid_p)
+print(sd_fie_l)
+print(sd_fid_l)
+
+# perforamnce 
+t_test_por <- t.test(data_coded_response_fie$sum_performance, data_coded_response_fid$sum_performance, alternative = "two.sided", var.equal = FALSE)
+
+# learning 
+t_test_lor <- t.test(data_coded_response_fie$sum_learning, data_coded_response_fid$sum_learning, alternative = "two.sided", var.equal = FALSE)
+
+print(t_test_por)
+print(t_test_lor)
+```
+
+```{r}
+## compute relevant information to generate figure
+data_coded_response_combined_fig <- data_coded_response %>%
+  pivot_longer(sum_performance:sum_learning,
+               names_to = "response_type",
+               values_to = "num_response") %>%
+  group_by(Condition, response_type) %>%
+  summarise(count = n(),
+            mean = mean(num_response, na.rm = TRUE),
+            sd = sd(num_response, na.rm = TRUE), 
+            sem = sd / sqrt(count),)
+
+## generate figure
+response_labels <- c("Performance-Oriented","Learning-Oriented")
+response_breaks <- c("sum_performance", "sum_learning")
+fill_labels <- c("Failure-Is-Debilitating Condition", "Failure-Is-Enhancing Condition")
+p_values <- c(paste("p =", round(t_test_por$p.value, digits = 2)), 
+              paste("p =", round(t_test_lor$p.value, digits = 2)))
+y_breaks <- seq(0, 5, by = 1)
+fig_coded_response <- ggplot(data_coded_response_combined_fig, 
+                             aes(x=response_type, y=mean, group=Condition, fill=Condition)) +
+  geom_bar(position="dodge", stat="identity") + 
+  geom_errorbar(aes(ymin=mean-sem, ymax=mean+sem), 
+                width=0.05, position=position_dodge(0.9)) +
+  scale_x_discrete("Parental Responses to Child-Failure Scenario", 
+                   limits=response_breaks, labels=response_labels) +
+  scale_y_continuous("Number of Responses", breaks=y_breaks) +
+  scale_fill_brewer(labels=fill_labels, palette="Blues") +
+  annotate("text", x=1:2, y=3.5, label=p_values) +
+  theme_bw() + 
+  theme(legend.position="right", 
+        legend.direction = "vertical",
+        legend.title=element_blank(),
+        panel.grid=element_blank(), panel.border=element_blank(), axis.line=element_line())
+
+# Print the figure
+fig_coded_response
+
+```
+
+
+#### 3-1). Main analysis (considering the control variable) 
+
+
+<div style="font-size: larger;">
+**Were parents who hold a failure-is-debilitating mind-set more likely to react with concerns about their child’s performance and lack of ability even after controlling parents' perception of their children's competence in school?**
+</div>
+
+ANCOVA used to compare mean of parents' responses (i.e., learning-oriented, performance-oriented) in each condition (i.e., failure-is-debilitating and failure-is-enhancing) while controlling for the effect of a covariate (i.e., parents' perceptions on child's competence.
+
+
+Original study:
+
+> When we controlled for parents’ perception of their children’s competence in school, failure-mind-set condition still predicted performance-oriented, t(131) = 3.249, p = .002, and learning-oriented, t(1, 131) = −2.02, p = .046, responses to children’s failure.
+
+
+Rescue project:
+
+<div style="font-size: larger;","margin-left: 30px;">
+
+Even after controlling for parents’ perception of their children’s competence in school, the failure-mindset condition **still did not significantly predict performance-oriented responses (t(138) = -0.669, p = 0.504), nor learning-oriented responses (t(138) = -0.757, p = 0.450)**. These results indicate that, unlike in Study 2, the failure-mindset condition—whether debilitating or enhancing—was not a significant factor in determining how parents responded to their child’s failure after accounting for their perception of their child's competence.
+</div>
+
+The code and the result is listed in below.
+```{r}
+control <-read.csv("../Final_data/Final Data Coding _EJM_control.csv")
+control <- control %>%
+  mutate(mean_competence = rowMeans(select(., Subject_1:Subject_4), na.rm = TRUE))
+
+# Split the data by condition
+control_fie <- control %>%
+  filter(Condition == "Enhancing")
+
+control_fid <- control %>%
+  filter(Condition == "Debilitating")
+
+# sum_performance and sum_learning are the dependent variables, 
+# Condition is the independent variable (factor), 
+# and mean_competence is the covariate.
+
+# ANCOVA with linear regression for learning
+lm_performance <- lm(sum_performance ~ Condition + mean_competence, data = control)
+summary(lm_performance)
+
+lm_learning <- lm(sum_learning ~ Condition + mean_competence, data = control)
+summary(lm_learning)
+```
+
+
+### Demographics of Sample 
+
+##### 1). Parent's Gender
+
+```{r}
+gender_table <- d_condition %>%
+  # Recode combined categories
+  mutate(Gender = case_when(
+    Gender == "Agender,Genderqueer, gender fluid, or non-binary" ~ "Non-binary",
+    Gender == "Genderqueer, gender fluid, or non-binary" ~ "Non-binary",
+    Gender == "Man or Male,Transgender" ~ "Transgender",
+    Gender == "Man or Male" ~ "Male",
+    Gender == "Woman or Female" ~ "Female",
+    TRUE ~ as.character(Gender)
+  )) %>%
+  # Convert Education to a factor and reorder levels
+  mutate(Gender = factor(Gender, levels = c("Female", "Male", "Transgender", "Non-binary"))) %>%
+  
+  # Count and calculate percentages
+  count(Gender) %>%
+  mutate(Percent = n / sum(n) * 100) %>%
+    mutate(Percent = paste0(round(Percent, 1), "%")) %>%
+  
+  # Rename for the table
+  rename(`Gender` = Gender)
+  
+# table with kable()
+kable(gender_table, col.names = c("Gender", "N", "%"))
+
+#figure
+ggplot(gender_table, aes(x = `Gender`, y = n, fill = `Gender`)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(x = "Gender", y = "Percentage", fill = "Gender") +
+  geom_text(aes(label = Percent), vjust = -0.4, size =3.5) +
+  scale_fill_brewer(palette = "Greys") +
+  theme_bw()+
+  theme(legend.position="right", 
+        legend.title = element_blank(),
+        panel.grid.major=element_blank(), 
+        panel.grid.minor=element_blank(),
+        panel.border=element_blank(),  
+        axis.line=element_line()) 
+```
+##### 2).Parents' Education 
+
+```{r}
+# education 
+education_table <- d_condition %>%
+  # Recode combined categories
+  mutate(Education = case_when(
+    Education == "College degree,Post Graduate degree" ~ "Post Graduate degree",
+    Education == "HS degree,College degree" ~ "College degree",
+    TRUE ~ as.character(Education)
+  )) %>%
+  # Convert Education to a factor and reorder levels
+  mutate(Education = factor(Education, levels = c("No degree", "HS degree", "College degree", "Post Graduate degree"))) %>%
+  # Count and calculate percentages
+  count(Education) %>%
+  mutate(Percent = n / sum(n) * 100) %>%
+  mutate(Percent = paste0(round(Percent, 1), "%")) %>%
+  # Rename for the table
+  rename(`Education Level` = Education)
+
+# table with kable()
+kable(education_table, col.names = c("Education Level", "N", "%"))
+
+# plot
+ggplot(education_table, aes(x = `Education Level`, y = n, fill = `Education Level`)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(x = "Education Level", y = "Percentage", fill = "Education Level") +
+  geom_text(aes(label = Percent), vjust = -0.4, size =3.5) +
+  scale_fill_brewer(palette = "Greys") +
+  theme_bw() +
+  theme(legend.position="right", 
+        legend.title = element_blank(),
+        panel.grid.major=element_blank(), 
+        panel.grid.minor=element_blank(),
+        panel.border=element_blank(),  
+        axis.line=element_line()) 
+```
+
+##### 3).Parents' Race
+
+```{r}
+# Recode combined categories into separate rows
+race_table <- d_condition %>%
+  mutate(Race = case_when(
+    Race == "Black or African American,White" ~ "Black or African American;White",
+    Race == "Hispanic, Latino, or Spanish origin,White" ~ "Hispanic, Latino, or Spanish origin;White",
+    Race == "American Indian or Alaska Native,White" ~ "American Indian or Alaska Native;White",
+    Race == "Other"~ "Fill in their own answer",
+    TRUE ~ as.character(Race)
+  )) %>%
+  separate_rows(Race, sep = ";") %>%
+  mutate(Race = factor(Race, levels = c("White", "Black or African American", "Asian", "Hispanic, Latino, or Spanish origin",
+                                        "American Indian or Alaska Native", "Fill in their own answer", "NA"))) %>%
+  count(Race, name = "Count") %>%
+  mutate(Percent = Count / sum(Count) * 100) %>%
+  mutate(Percent = paste0(round(Percent, 1), "%"))
+
+# table with kable()
+knitr::kable(race_table, col.names = c("Race", "N", "%"))
+
+# plot
+ggplot(race_table, aes(x = Race, y = Count, fill = Race)) +
+  geom_bar(stat = "identity") +
+  theme_minimal() +
+  labs(title = "Race Distribution", x = "Race Category", y = "Count") +
+  geom_text(aes(label = Percent), vjust = -0.3, size = 2.5) +  
+  scale_fill_brewer(palette = "Greys") +
+  theme_bw() +
+  theme(legend.position="right", 
+        legend.title = element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),  
+        axis.line = element_line()) + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+```
+
+## Discussion
+
+## Mini meta analysis
+To compare across multiple studies with different measures, Standardized mean difference (e.g., Cohenʼs d) is common for experimental interventions. Unfortunately, the 1st replication study did not report any effect size and the original study only reported the ηp², so I changed the ηp² of the original study to Cohen's d and calculated the variance. After calculating the Cohen's d and the variance of the rescue project, I used two effect size (i.e., original study and rescue project) for meta analysis.
+
+**1). Calculate the cohen's d** 
+
+> Finally, we tested whether parents in the two conditions reacted differently to the child-failure scenario. Results paralleled those of Study 2: Parents who were induced to hold a failure-is-debilitating mind-set were more likely to react with concerns about their child’s per- formance and lack of ability, t(131) = 3.246, p < .001, ηp2 = .075, and less likely to react with support for their child’s learning and mastery, t(131) = −2.04, p = .043, ηp2 = .031, compared with those who were induced to hold a failure-is-enhancing mind-set (see Fig. 2). Parents in both conditions did not report performance-oriented responses (M = 0.485, SD = 0.693) nearly as often as learning-oriented responses (M = 2.38, SD = 1.53).
+
+1-1). Cohen's d of the Original study 
+
+* change ηp² to Cohen's d
+```{r}
+eta_squared_to_cohens_d <- function(eta_squared) {
+  return(sqrt(eta_squared / (1 - eta_squared)))
+}
+
+# ηp² in the original paper 
+eta_squared_performance <- 0.075
+eta_squared_learning <- 0.031
+
+# Convert to Cohen's d
+cohens_d_performance <- eta_squared_to_cohens_d(eta_squared_performance)
+cohens_d_learning <- eta_squared_to_cohens_d(eta_squared_learning)
+
+# Print the results
+print (cohens_d_performance)
+print (cohens_d_learning)
+```
+
+1-2). Cohen's d of the Rescue project
+
+```{r}
+library(effsize)
+cohens_d_performance <- cohen.d(data_coded_response_fid$sum_performance, data_coded_response_fie$sum_performance)
+cohen_d_learning <- cohen.d(data_coded_response_fid$sum_learning, data_coded_response_fie$sum_learning)
+
+print(cohens_d_performance)
+print(cohen_d_learning )
+
+```
+**2). Calculate the variance**
+
+2-1). Variance of the Original study
+
+```{r}
+# Original study effect sizes and sample sizes
+cohens_d_performance_original <- 0.2847474
+cohens_d_learning_original <- 0.1788624
+n1_original <- 57 #debilitating condition
+n2_original <- 72 #enhancing condition
+total_n_original <- n1_original + n2_original
+
+# Function to calculate the variance of Cohen's d based on sample sizes for the original study
+variance_cohens_d <- function(n1, n2, d) {
+  ((n1 + n2) / (n1 * n2)) + (d^2 / (2 * (n1 + n2)))
+}
+
+# Calculating variances for the original study
+var_performance_original <- variance_cohens_d(n1_original, n2_original, cohens_d_performance_original)
+var_learning_original <- variance_cohens_d(n1_original, n2_original, cohens_d_learning_original)
+
+```
+
+2-2). Variance of the Rescue project
+
+```{r}
+# Function to calculate the variance of Cohen's d from confidence intervals
+ci_to_var <- function(lower, upper) {
+  (upper - lower)^2 / (4 * 1.96^2)
+}
+
+# Rescue study effect sizes and their confidence intervals
+cohens_d_performance_rescue <-  0.1065782
+ci_lower_performance_rescue <- 0.4399067
+ci_upper_performance_rescue <- -0.2267503
+
+cohens_d_learning_rescue <- 0.1256004
+ci_lower_learning_rescue <- -0.2078199
+ci_upper_learning_rescue <- 0.4590208
+
+# Calculating variances based on the confidence intervals for the rescue study
+var_performance_rescue <- ci_to_var(ci_lower_performance_rescue, ci_upper_performance_rescue)
+var_learning_rescue <- ci_to_var(ci_lower_learning_rescue, ci_upper_learning_rescue)
+```
+
+
+3). Do Meta_analysis 
+
+```{r}
+library(metafor)
+# Creating a data frame for the meta-analysis with the rescue study first
+studies <- data.frame(
+  study = c("Rescue Performance", "Rescue Learning", "Original Performance", "Original Learning"),
+  effect_size = c(cohens_d_performance_rescue, cohens_d_learning_rescue, cohens_d_performance_original, cohens_d_learning_original),
+  variance = c(var_performance_rescue, var_learning_rescue, var_performance_original, var_learning_original)
+)
+
+# Running the meta-analysis
+meta_analysis_results <- rma(yi = effect_size, vi = variance, data = studies, method = "REML")
+
+# Printing the meta-analysis results
+print(meta_analysis_results)
+
+# Generating a forest plot with study labels
+forest(meta_analysis_results, slab = paste(studies$study))
+```
+
+**Overall Interpretation:**
+
+Rescue project has effect sizes close to zero and their confidence intervals include zero, suggesting these effects are not statistically significant. Original study shows positive effect sizes, but their confidence intervals also cross the line of no effect, indicating potential non-significance.
+
+The combined effect size is 0.17, suggesting a small positive effect across all studies. The confidence interval [0.00, 0.34] includes zero, which means this combined effect is not statistically significant at the 95% confidence level.
+
+
+### Summary of Replication Attempt
+
+![Reulst comparison among original study, 1st replication, and rescue project](../image/Three study.)
+This is the result of research questions. 
+
+<div style="font-size: larger;">
+**Was the parents’ agreement with each of the intended mindsets above the midpoint?**
+</div> => YES
+
+<div style="font-size: larger;">
+**Did the parents in the failure-is-enhancing condition report more of a failure-is-enhancing mindset than the parents in the failure-is-enhancing condition?**
+</div> => YES
+
+<div style="font-size: larger;">
+**Were parents who hold a failure-is-debilitating mind-set more likely to react with concerns about their child’s performance and lack of ability?**
+</div> => **NO**
+
+<div style="font-size: larger;">
+**Were parents who hold a failure-is-debilitating mind-set more likely to react with concerns about their child’s performance and lack of ability even after controlling parents' perception of their children's competence in school?**
+</div> => **NO**
+
+As a result, the result did not support the hypothesis that parents in the failure-is-debilitating condition were more likely to react with concerns about their child’s performance and lack of ability. The differences between conditions in performance-oriented (t(132.35) = -0.63017, p = 0.5297) and learning-oriented responses (t(138.83) = -0.74679, p = 0.4565) were not statistically significant.
+
+Even with ANCOVA, which control for the potential confounding effect of parents' perceptions of their children's competence, the failure-mindset condition still did not significantly predict performance-oriented or learning-oriented responses. It suggested that **parents' mindsets may not be as influential in their responses to child failure as previously thought**.
+
+
+Moreover, the findings from the rescue project challenge the results of the original study, showing negligible effect sizes and non-significant results when assessing the impact of failure mindsets on parental responses. The meta-analysis further underscores the tenuous nature of these effects. **The combined effect size across studies was small (0.17) and not statistically significant**, as the confidence interval [0.00, 0.34] includes zero. This suggests that while there is a trend towards a failure-is-enhancing mindset being associated with slightly higher learning-oriented responses, these differences are not robust enough to be considered statistically meaningful. This nuanced interpretation of the data calls for a careful consideration of the variables that may influence parental responses to child failure scenarios and highlights the complexity of such dynamics which may not be easily captured through simple experimental manipulations.
+
+The current study underscores the importance of replicating psychological research to validate original findings. Our results indicate that parents' mindsets, whether failure-is-debilitating or failure-is-enhancing, may not significantly impact their responses to their children's failures. These findings call for further research to explore the intricate nature of parental influence on child development and the potential factors that contribute to the shaping of children’s approaches to failure and learning.
+
+### Commentary
+
+For the follow-up study, the coders should develop more strict coding scheme and need more conversation between coders to enhance the effect size. 
+
